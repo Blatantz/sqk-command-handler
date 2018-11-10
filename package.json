@@ -1,6 +1,6 @@
 {
   "name": "sqk-command-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A command handler",
   "main": "command-handler.js",
   "scripts": {
