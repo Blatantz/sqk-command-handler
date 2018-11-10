@@ -115,13 +115,12 @@ module.exports = (command, prefix, discordMentionID) => {
       }
       return response;
     }
-  } else {
-    let response = {
-      command: null,
-      args: null,
-      text: null,
-      success: false
-    }
-    return response;
   }
+  let response = {
+    command: null,
+    args: null,
+    text: null,
+    success: false
+  }
+  return response;
 }
