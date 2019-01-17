@@ -91,7 +91,6 @@ module.exports = (command, prefix, discordMentionID) => {
         }
         return response;
       }
-
       prfstrm = "<@!" + discordMentionID + "> ";
       prfch = command.split("").slice(0, prfstrm.length).join("");
       if (prfch == prfstrm) {
@@ -146,7 +145,6 @@ module.exports = (command, prefix, discordMentionID) => {
       }
       return response;
     }
-
     prfstrm = "<@!" + discordMentionID + "> ";
     prfch = command.split("").slice(0, prfstrm.length).join("");
     if (prfch == prfstrm) {
@@ -169,13 +167,12 @@ module.exports = (command, prefix, discordMentionID) => {
       }
       return response;
     }
-  } else {
-    let response = {
-      command: null,
-      args: null,
-      text: null,
-      success: false
-    }
-    return response;
   }
+  let response = {
+    command: null,
+    args: null,
+    text: null,
+    success: false
+  }
+  return response;
 }
